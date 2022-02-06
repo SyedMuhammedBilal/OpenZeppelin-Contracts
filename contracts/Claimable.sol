@@ -11,7 +11,7 @@ contract Claimable is Ownable {
         _;
     }
 
-    function transferOWnership(address _newOwner) public onlyOwner {
+    function transferOwnership(address _newOwner) public onlyOwner {
         pendingOwner = _newOwner;
     }
 
